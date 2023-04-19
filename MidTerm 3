@@ -1,27 +1,19 @@
 3.1. What is in the training set, how big is it?
 
-The TeachOpenCADD project's Talktorials provide a learning resource for people who are interested in ligand-based screening using neural networks. The dataset used in the Talktorials contains 2,500 compounds with their molecular descriptors and bioactivity data. Molecular descriptors are essentially features of the compounds that are calculated using a Python package called RDKit. The bioactivity data is expressed as IC50, which is a measure of how effective a compound is at inhibiting a specific protein target in vitro.
-The dataset size is relatively small compared to some other drug discovery datasets, but it's still useful for learning how to develop and test machine learning models for virtual screening and predicting the activity of new compounds against the target. This small dataset size also makes it more accessible for educational purposes and allows users to experiment with different approaches to feature selection, model training, and evaluation without requiring a lot of computational resources.
+The training Set is a part of the actual dataset (used to train the model). in this case its 70% from nearly 180'000 datapoints (so about 125000)
 
 
 3.2. What modifications do you need to do to the data set to perform the tutorial.
 
-- Parsing the raw data file to extract the relevant information for each compound, such as the compound identifier, molecular formula, and bioactivity data.
-- Converting the molecular formula for each compound into a molecular structure using a molecular modeling software package like RDKit.
-- Calculating the molecular descriptors for each compound using RDKit, which involves generating a set of numerical values that describe the physicochemical properties and 2D/3D structure of the molecule.
-- Preprocessing the bioactivity data to convert it into a binary classification task, where compounds with IC50 values below a certain threshold are considered active and compounds with IC50 values above the threshold are considered inactive.
-- Splitting the preprocessed dataset into training, validation, and test sets, which involves randomly partitioning the compounds into non-overlapping subsets to be used for model training, validation, and testing.
+the dataset we use does not have the pIC50 value calculated. we first have to calculate it from the IC50 value.
 
 
 3.3. What is a test set? Any other types of set?
 
-In machine learning, a test set is a portion of the dataset that is held out from model training and is used to evaluate the performance of the trained model. The test set is used to simulate how the model would perform on new, unseen data. It helps to ensure that the model has not overfit to the training data and can generalize well to new data.
-There are other types of sets commonly used in machine learning, such as:
-- Training set: This is the portion of the dataset that is used to train the machine learning model. The model learns from the patterns in the training set to make predictions on new, unseen data.
-- Validation set: This is an optional set used for tuning hyperparameters in the model. Hyperparameters are settings that are chosen before model training and affect the model's performance. The validation set is used to evaluate the model's performance on a subset of the training data while tuning the hyperparameters to prevent overfitting to the training set.
-- Cross-validation set: This is a method for evaluating the performance of the model on multiple splits of the dataset. The dataset is split into multiple folds, and each fold is used as a test set while the remaining folds are used for training. This helps to ensure that the model's performance is consistent across different subsets of the data and is not just optimized for a particular split.
+the test set is 30% from out dataset. is used to evaluate the performance of the trained Model
 
 
 3.4. Before starting describe with 1-2 sentences, in your own words, what is done in each
 of the cells.
+written in the code/Notebook
 
