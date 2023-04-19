@@ -5,7 +5,7 @@ There are several popular machine learning libraries available, including Scikit
 
 2.2. What is Chembl? How do you access it?
 
-ChEMBL is a large publicly available database of bioactive molecules and their properties, with a focus on drug discovery research. It contains information on millions of compounds, including their structures, activities, and pharmacological properties. ChEMBL can be accessed through its website (https://www.ebi.ac.uk/chembl/) or through its API (Application Programming Interface), which allows users to programmatically retrieve data from the database. The website provides a user-friendly interface that allows users to search for compounds, targets, or assays and download data in various formats.
+ChEMBL is a large publicly available database of bioactive molecules and their properties, with a focus on drug discovery research. It contains information on millions of compounds, including their structures, activities, and pharmacological properties.
 
 
 2.3. What is machine learning, and how does it differ from traditional programming?
@@ -15,26 +15,22 @@ Machine learning is a type of artificial intelligence that lets computers learn 
 
 2.4. What are the key concepts and techniques in machine learning?
 
-In machine learning, we use data preparation to collect, clean, and pre-process data before using it for training. Feature engineering helps select the most relevant features from the data to improve the accuracy of the model. In supervised learning, the computer is trained on labeled data to make predictions, while unsupervised learning involves identifying patterns in unlabeled data. Reinforcement learning is used when the computer learns through feedback in an environment. Model evaluation tests the accuracy and effectiveness of the machine learning model, while hyperparameter tuning selects optimal settings for the model. These are some of the key concepts and techniques used in machine learning.
+In machine learning, we use data preparation to collect, clean, and pre-process data before using it for training. 
 
 
 2.5. What are the different types of machine learning algorithms?
 
 Machine learning is when computers can learn by themselves without being specifically programmed for a task. It is a subfield of artificial intelligence that focuses on creating algorithms and models that can learn from data and make predictions or decisions based on that data.
-There are different types of machine learning, such as supervised learning, unsupervised learning, reinforcement learning, deep learning, transfer learning, and ensemble learning. Each type of machine learning has its own strengths and weaknesses, and they are used for different types of problems.
+There are different types of machine learning, such as supervised learning, unsupervised learning, reinforcement learning.
 In supervised learning, the computer is trained with labeled data, which means the data has known outcomes. In unsupervised learning, the computer is given unlabeled data and must find patterns or relationships within the data. In reinforcement learning, the computer learns by interacting with an environment and receiving feedback in the form of rewards or punishments.
-Deep learning is a type of machine learning that uses neural networks with multiple layers to learn representations of data. Transfer learning involves taking a pre-trained model and fine-tuning it for a new task, and ensemble learning combines multiple models to improve accuracy and reduce overfitting.
-Overall, machine learning is a powerful tool for solving complex problems, and choosing the right type of machine learning for the task at hand is crucial for success.
 
 2.6. What are the common applications of machine learning?
 
 
-Machine learning has a wide range of applications in various fields. Here are some common applications of machine learning:
-Image and speech recognition: Machine learning is used to train models that can identify objects in images and recognize speech in audio recordings. This is used in a variety of applications, including virtual assistants like Siri and Alexa, as well as in self-driving cars.
-Fraud detection: Machine learning can be used to detect fraudulent transactions or activities by analyzing patterns in data.
+Image and speech recognition: including virtual assistants like Siri and Alexa, as well as in self-driving cars.
+
 Recommendation systems: Machine learning is used to create personalized recommendations for users based on their past behavior, such as recommending movies or products.
 Natural language processing: Machine learning is used to analyze and understand human language, such as in chatbots, language translation, and sentiment analysis.
-Predictive maintenance: Machine learning is used to predict when equipment or machinery is likely to fail, allowing for preventative maintenance to be performed before a breakdown occurs.
 Financial modeling: Machine learning is used to analyze financial data and make predictions about stock prices, credit risk, and other financial metrics.
 Healthcare: Machine learning is used to analyze medical images, diagnose diseases, and predict patient outcomes.
 Autonomous vehicles: Machine learning is used to train models that can recognize and respond to objects in the environment, allowing for safe and efficient navigation of autonomous vehicles.
@@ -43,32 +39,26 @@ Autonomous vehicles: Machine learning is used to train models that can recognize
 2.7. How do you evaluate the performance of a machine learning model?
 
 Evaluating the performance of a machine learning model is crucial to ensure that it is accurate and effective. The performance evaluation methods used depend on the type of problem and the type of model being used. Here are some commonly used methods:
-One common approach is to split the data into training and testing sets. The model is trained on the training set and then tested on the testing set to evaluate its performance. Another method is cross-validation, where the data is split into k-folds, and the model is trained and tested k times, with each fold used for testing in turn.
+One common approach is to split the data into training and testing sets. The model is trained on the training set and then tested on the testing set to evaluate its performance.
 For classification problems, a confusion matrix can be used to evaluate the performance of a model. It shows the number of true positives, true negatives, false positives, and false negatives. Other metrics such as accuracy, precision, recall, and the F1 score can also be used to evaluate classification models.
 For binary classification problems, the ROC curve is often used to evaluate the performance of the model. The ROC curve is a plot of the true positive rate against the false positive rate for different classification thresholds.
 
 
 2.8. How do you prepare data for use in a machine learning model?
 
-To prepare data for a machine learning model, these common steps are often used:
-
 Cleaning the data: Handling missing data, removing duplicates, and fixing other issues with the data.
 Transforming the data: Converting categorical variables to numerical variables, scaling features, and normalizing the data.
 Selecting relevant features: Choosing the most important features for the model and removing irrelevant ones.
 Splitting the data: Separating the data into training and testing sets, and sometimes a validation set.
-Augmenting the data: Creating new data through transformations like rotation or zooming.
-Addressing imbalanced data: Dealing with datasets where one class has many more or fewer examples than others.
-Handling outliers: Identifying and fixing outliers in the data that can affect the model's performance.
 
 
 2.9. What are some common challenges in machine learning, and how can they be addressed?
 
-Machine learning can be challenging and there are several common issues that can arise. Some of these include overfitting, underfitting, poor data quality, imbalanced data, interpretability, scaling, and computational resources. Techniques such as regularization, data cleaning, resampling, feature importance analysis, distributed computing, and cloud-based solutions can be used to address these challenges. It is important to carefully evaluate the specific problem and data to identify and address any challenges that may arise during the machine learning process.
+Overfitting, underfitting, poor data quality, imbalanced data, interpretability, scaling, and computational resources. Techniques such as regularization, data cleaning, resampling, feature importance analysis, distributed computing, and cloud-based solutions can be used to address these challenges. It is important to carefully evaluate the specific problem and data to identify and address any challenges that may arise during the machine learning process.
 
 
 2.10. What are some resources and tools available to help you learn and practice machine learning?
 
-Machine learning is a complex and rapidly evolving field, and there are many resources and tools available to help you learn and practice it. Here are some of the most popular ones:
 Online courses: There are many online courses available that cover machine learning concepts, algorithms, and applications. These courses are usually structured and cover the material in a logical and organized way, making them a great option for beginners. Some popular platforms for online courses include Coursera, Udacity, and edX.
 Books: There are many books available on machine learning, ranging from introductory to advanced topics. Books can be a great resource for gaining a deeper understanding of specific machine learning concepts or techniques. 
 Tutorials and blogs: There are many tutorials and blogs available online that cover various machine learning topics. These can be a great resource for gaining a quick understanding of a particular topic or technique.
