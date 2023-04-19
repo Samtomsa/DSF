@@ -21,7 +21,8 @@ from tensorflow.keras.layers import Dense
 from tensorflow.keras.callbacks import ModelCheckpoint
 
 HERE = Path(_dh[-1])
-DATA = HERE / "data"
+DATA1 = HERE / "kinase.csv"
+DATA2 = HERE / "best_weights.hdf5"
 
 def smiles_to_fp(smiles, method="maccs", n_bits=2048):
     """
@@ -82,9 +83,13 @@ def smiles_to_fp(smiles, method="maccs", n_bits=2048):
     model.compile(loss="mean_squared_error", optimizer='adam', metrics=["mse", "mae"])
     return model
     
-url = "https://cloud-new.gdb.tools/index.php/s/ZfZM7itQf3rm6Sw/download"
-df = pd.read_csv(url, index_col=0)
+# url = "https://cloud-new.gdb.tools/index.php/s/ZfZM7itQf3rm6Sw/download"
+# df = pd.read_csv(url, index_col=0)
+# df = df.reset_index(drop=True)
+
+df = pd.read_csv(DATA1, index_col=0)
 df = df.reset_index(drop=True)
+
 
 # Keep necessary columns
 chembl_df = df[["smiles", "target_chembl_id","standard_value"]]
@@ -107,9 +112,9 @@ layer1_size = 64
 layer2_size = 32
 
 # Save the trained model
-filepath = DATA / "best_weights.hdf5"
+
 checkpoint = ModelCheckpoint(
-    str(filepath),
+    str(DATA2),
     monitor="loss",
     verbose=0,
     save_best_only=True,
