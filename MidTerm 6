@@ -12,4 +12,4 @@ module load Python
 
 srun python3 ./DSF/midtermcode.py
 
-to run the training you need that dataset, so best think would be to download the data file and but it in the DSF folder inside  https://raw.githubusercontent.com/Samtomsa/DSF/main/Ubelix.png
+to run the training you need that dataset, so best think would be to download the data file and but it in the DSF folder inside  
