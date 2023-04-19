@@ -1,11 +1,12 @@
 5.1 What is Ubelix?
-Ubelix is a high-performance computing cluster operated by the University of Bern in Switzerland. It is designed to provide researchers with the computing power and resources needed to perform complex scientific simulations, data analysis, and other computationally intensive tasks. Ubelix consists of several hundred computing nodes, including CPUs and GPUs, interconnected by a high-speed network.
+Ubelix is a high-performance computing cluster operated by the University of Bern. Ubelix consists of several hundred computing nodes, including CPUs and GPUs, interconnected by a high-speed network.
 
 5.2 How do you gain access?
-Access to Ubelix is granted through an application process. Researchers affiliated with Swiss academic institutions can apply for an account by filling out an online application form and providing information about their research project and computing needs. Once approved, users are provided with login credentials and access to the Ubelix web portal, where they can submit and manage their computing jobs.
+Access to Ubelix is granted to anybody with a campus account.
 
 5.3 How do you submit a job?
-There are two ways to submit a job on Ubelix: through the web portal or the command line interface. To submit a job through the web portal, users log in to their account and use the job submission form to specify the computing resources required for their job, upload any necessary input files, and set other job parameters. To submit a job through the command line interface, users log in to Ubelix using SSH and use the SLURM job scheduler to submit and manage their jobs.
+
+sbatch myjob.sh
 
 5.4 Who can have access?
 Access to Ubelix is available to researchers affiliated with Swiss academic institutions, including universities, research institutes, and other public research organizations. To gain access, users must submit an application and provide information about their research project and computing needs. Priority is given to projects with a clear scientific or research objective, and resources are allocated based on availability and project needs.
